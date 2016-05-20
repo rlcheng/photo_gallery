@@ -4,6 +4,8 @@
 }
 .navbar-default .navbar-brand {
   color: #5c5c5c;
+  font-weight: 700;
+  font-size: 22px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {

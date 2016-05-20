@@ -1,0 +1,17 @@
+#images {
+  padding: 15px;
+}
+
+div.box {
+   width: 200px;
+   height: 200px;
+   background: #212121;
+   display: flex;
+   justify-content: center;
+   margin: 10px 5px 10px 5px;
+}
+div.img {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
