@@ -48,4 +48,17 @@
     return loadImage();
   });
 
+  $('input[type="checkbox"]').click(function() {
+    var type;
+    type = $(this).attr('id');
+    $('input[type="checkbox"]').not(this).prop('checked', false);
+    if ($(this).is(":checked")) {
+      params['orientation'] = type;
+    } else {
+      delete params['orientation'];
+    }
+    $('#images').empty();
+    return loadImage();
+  });
+
 }).call(this);

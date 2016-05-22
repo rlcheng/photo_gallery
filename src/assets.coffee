@@ -24,3 +24,13 @@ $('#sort li').click ->
 	params['sort'] = selection
 	$('#images').empty()
 	loadImage()
+
+$('input[type="checkbox"]').click ->
+	type = $(@).attr('id')
+	$('input[type="checkbox"]').not(@).prop('checked', false)
+	if $(@).is(":checked")
+		params['orientation'] = type 
+	else
+		delete params['orientation']
+	$('#images').empty()
+	loadImage()
