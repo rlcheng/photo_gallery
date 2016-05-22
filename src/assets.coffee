@@ -18,3 +18,9 @@ $('#search').on 'keyup', ->
 	params['q'] = $('#search').val()
 	$('#images').empty()
 	loadImage()
+
+$('#sort li').click ->
+	selection = $(@).text().toLowerCase().split(' ').join('_')
+	params['sort'] = selection
+	$('#images').empty()
+	loadImage()

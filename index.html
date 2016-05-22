@@ -27,9 +27,21 @@
         </button>
 
         <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
-            <form class="navbar-form" role="search">
-                <input type="text" placeholder="Search" id="search"></li>
-            </form>
+            <li>
+                <form class="navbar-form" role="search">
+                    <input type="text" placeholder="Search" id="search"></li>
+                </form>
+            </li>
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sort <span class="caret"></span></a>
+                <ul class="dropdown-menu" id="sort">
+                    <li><a href="#">Curated At</a></li>
+                    <li><a href="#">Created At</a></li>
+                    <li><a href="#">Rating</a></li>
+                    <li><a href="#">Filename</a></li>
+                </ul>
+            </li>
+
         </ul>
     </div>
 

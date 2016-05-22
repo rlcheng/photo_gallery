@@ -40,4 +40,12 @@
     return loadImage();
   });
 
+  $('#sort li').click(function() {
+    var selection;
+    selection = $(this).text().toLowerCase().split(' ').join('_');
+    params['sort'] = selection;
+    $('#images').empty();
+    return loadImage();
+  });
+
 }).call(this);
